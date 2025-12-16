@@ -7,6 +7,7 @@ This repository is an **architecture and system overview**.
 Core implementation is private.
 
 ---
+EVE exists because complex AI systems fail silently unless they are explicitly controlled.
 
 ## What EVE does
 
