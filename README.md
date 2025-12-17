@@ -1,53 +1,80 @@
-# EVE – AI System Orchestration Platform
+# EVE — AI System Orchestration Platform
 
-EVE is a **modular AI orchestration platform** designed to manage
-complex, multi-agent systems in a **safe, deterministic and debuggable way**.
+EVE is a **modular AI system orchestration platform** for designing,
+controlling, and reasoning about complex multi-agent systems in a
+**safe, deterministic, and inspectable way**.
 
-This repository is an **architecture and system overview**.
-Core implementation is private.
+This repository provides the **architectural contracts, system model,
+and control philosophy** behind EVE.
+
+**Core runtime implementations are intentionally private.**
 
 ---
-EVE exists because complex AI systems fail silently unless they are explicitly controlled.
+
+EVE exists because complex AI systems tend to fail *silently* when
+execution, reasoning, and authority are not explicitly separated.
 
 ## What EVE does
 
-EVE acts as a control layer between:
-- user commands
-- AI agents
-- backend systems
-- safety and policy layers
+EVE acts as a **control and governance layer** between:
 
-It ensures that:
+- user intent
+- AI agents
+- execution engines
+- safety, policy, and verification layers
+
+Its purpose is not to replace models or agents,
+but to **prevent unintended behavior, accidental execution,
+and loss of responsibility** in AI-driven systems.
+
+EVE ensures that:
+
 - agents run only when explicitly allowed
-- complex systems remain predictable
-- AI pipelines are observable and stable
-- analysis and build actions are strictly separated
+- reasoning is separated from authority
+- complex pipelines remain predictable
+- analysis, experimentation, and verification never blur
+- every critical transition is observable and debuggable
 
 ---
 
-## Key design principles
+## Core design principles
 
 - Deterministic routing (no accidental execution)
 - Explicit fan-out policies for multi-agent systems
-- Safe handling of partial failures
+- Human-controlled transitions between analysis and action
 - Clear separation of concerns:
   - parsing
   - routing
   - execution
   - synthesis
-- Defensive programming for AI systems
+- Defensive system design for AI orchestration
+- Failure visibility over silent optimization
 
 ---
 
-## Core capabilities
+## Core capabilities (conceptual)
 
-- Intent parsing & command routing
-- Multi-agent orchestration
-- Policy-based agent fan-out
-- Semantic search & vector databases
-- Auto-learning pipelines
-- Secure execution layers (X-Vault integration)
-- Energy and hardware control domains (ELEKTO)
+- Intent parsing and command routing
+- Multi-agent orchestration and coordination
+- Policy-governed agent fan-out
+- Semantic search and contextual memory
+- Auto-learning and evolution pipelines
+- Explicit verification layers (X-Vault integration)
+- Infrastructure and energy system domains (ELEKTO)
+
+---
+
+## What this repository is — and is not
+
+**This repository is:**
+- an architectural reference
+- a system-level design
+- a safety and governance model for AI systems
+
+**This repository is not:**
+- a drop-in AI framework
+- a hosted AI service
+- an autonomous agent platform
 
 ---
 
@@ -58,7 +85,7 @@ It ensures that:
   https://github.com/elekto-energy/elekto-xvault-security
 
 - **ELEKTO Demo & Backend**  
-  Energy token systems, dashboards, backend services  
+  Energy systems, dashboards, backend services  
   https://github.com/elekto-energy
 
 - **CableDNA**  
@@ -70,10 +97,11 @@ It ensures that:
 ## Author
 
 **Joakim Eklund**  
-Senior Software Engineer / AI Systems Developer  
+Senior Software Engineer / AI Systems Architect  
 Remote-first (EU / global)
 
 ---
 
-> This project focuses on *engineering quality* rather than model hype.
-> Many AI failures are system failures — EVE is designed to prevent that.
+> This project focuses on **engineering discipline over model hype**.
+> Most AI failures are system failures — EVE is designed to prevent them.
+
