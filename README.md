@@ -1,4 +1,6 @@
 # EVE — AI System Orchestration Platform
+## Working Proof
+See implementation: [eve-platform-proof](https://github.com/elekto-energy/eve-platform-proof)
 
 EVE is a **modular AI system orchestration platform** for designing,
 controlling, and reasoning about complex multi-agent systems in a
